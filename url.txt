@@ -1,1 +1,1 @@
-{streamlit_deploy_url}
+https://axellsiagian-ecommerce-analysis.streamlit.app/
