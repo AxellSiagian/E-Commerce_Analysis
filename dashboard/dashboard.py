@@ -246,7 +246,7 @@ with col1:
 # Plotting kategori terburuk
 with col2:
     st.write('5 Kategori Produk Terburuk')
-    fig2, ax2 = plt.subplots(figsize=(8, 7))
+    fig2, ax2 = plt.subplots(figsize=(8, 6.5))
     fig.patch.set_facecolor('#C7C7C7')
     ax2.barh(bottom_categories['product_category_name'][::-1], bottom_categories['avg_review_score'][::-1], color='salmon')
     ax2.set_xlabel('Rata-Rata Review')
