@@ -166,7 +166,7 @@ st.subheader('Analisis Pelanggan Order Berulang')
 transaction_counts = analyze_customer_reorder(main_df)
 
 # Warna khusus
-colors = {2:'#ffdc99', 3: '#ff9999', 4: '#66b3ff', 5: '#99ff99', 6: '#c2c2f0', 7: '#ffcc99'}
+colors = {2:'#A58989', 3: '#8D6B6B', 4: '#A87070', 5: '#A65454', 6: '#9E3737', 7: '#9C2121'}
 
 # Menghitung total dari customer
 total_customers = len(transaction_counts)
@@ -184,7 +184,7 @@ with col1:
     st.write('Perbandingan Customer Sekali Order dan Berulang')
     fig1, ax1 = plt.subplots()
     fig.patch.set_facecolor('#C7C7C7')
-    ax1.pie([single_transaction_count, multiple_transaction_count], labels=['Order Sekali', 'Order Berulang'], autopct='%1.1f%%', startangle=140, colors=['#Afdc99', '#ffdc99'])
+    ax1.pie([single_transaction_count, multiple_transaction_count], labels=['Order Sekali', 'Order Berulang'], autopct='%1.1f%%', startangle=140, colors=['#939393', '#A58989'])
     # ax1.set_title('Perbandingan Customer Sekali Order dan Berulang')
     ax1.axis('equal')
     st.pyplot(fig1)
